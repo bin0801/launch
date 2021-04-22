@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 /**
- * @author: yb
+ * @author: kino
  * @CreateDate: 2021/4/2 11:49
  */
 public class IntentChangeActivity extends AppCompatActivity {

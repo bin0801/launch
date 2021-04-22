@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @author: yb
+ * @author: kino
  * @CreateDate: 2021/3/31 15:17
  */
 public class LaunchFragment extends Fragment {

@@ -3,7 +3,7 @@ package com.kino.lib.launch;
 import android.content.Intent;
 
 /**
- * @author: yb
+ * @author: kino
  * @CreateDate: 2021/4/2 11:48
  */
 class IntentChangeBean {

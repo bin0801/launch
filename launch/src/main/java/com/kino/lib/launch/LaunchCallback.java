@@ -3,7 +3,7 @@ package com.kino.lib.launch;
 import android.content.Intent;
 
 /**
- * @author: yb
+ * @author: kino
  * @CreateDate: 2021/3/31 15:20
  */
 public interface LaunchCallback {

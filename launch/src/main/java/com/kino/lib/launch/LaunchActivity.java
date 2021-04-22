@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 
 /**
- * @author: yb
+ * @author: kino
  * @CreateDate: 2021/3/31 14:54
  */
 public class LaunchActivity extends AppCompatActivity {

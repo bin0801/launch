@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Random;
 
 /**
- * @author: yb
+ * @author: kino
  * @CreateDate: 2021/3/31 15:21
  */
 public class LaunchTools {
