@@ -1,5 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kino.lib.launch">
 
-    /
+    <application>
+        <activity
+            android:name=".IntentChangeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseLibTransparencyActivityTheme" />
+    </application>
 </manifest>
