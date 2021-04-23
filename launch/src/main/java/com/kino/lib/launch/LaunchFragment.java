@@ -22,7 +22,7 @@ public class LaunchFragment extends Fragment {
         if (mMap == null) {
             mMap = new ConcurrentHashMap<>();
         }
-        int requestCode = LaunchTools.generateRandomNumber(mMap);
+        int requestCode = LaunchTools.randomRequestCode(mMap);
         mMap.put(requestCode, callback);
         super.startActivityForResult(intent, requestCode, null);
     }

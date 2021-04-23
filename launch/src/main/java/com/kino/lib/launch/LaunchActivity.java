@@ -2,10 +2,8 @@ package com.kino.lib.launch;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.concurrent.ConcurrentHashMap;
 
 
@@ -23,7 +21,7 @@ public class LaunchActivity extends AppCompatActivity {
         if (mMap == null) {
             mMap = new ConcurrentHashMap<>();
         }
-        int requestCode = LaunchTools.generateRandomNumber(mMap);
+        int requestCode = LaunchTools.randomRequestCode(mMap);
         mMap.put(requestCode, callback);
         super.startActivityForResult(intent, requestCode, null);
     }

@@ -14,7 +14,7 @@ class IntentChangeTools {
     static final ConcurrentHashMap<Integer, IntentChangeBean> mIntentMap = new ConcurrentHashMap<>();
 
     static void intentChange(Context context, Intent intent, LaunchCallback launchCallback) {
-        int requestCode = LaunchTools.generateRandomNumber(mIntentMap);
+        int requestCode = LaunchTools.randomRequestCode(mIntentMap);
         IntentChangeBean intentChangeBean = new IntentChangeBean(requestCode, intent, launchCallback);
         mIntentMap.put(requestCode, intentChangeBean);
         Intent changeIntent = new Intent(context, IntentChangeActivity.class);

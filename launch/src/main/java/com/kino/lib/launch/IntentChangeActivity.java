@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
  * @author: kino
  * @CreateDate: 2021/4/2 11:49
  */
-public class IntentChangeActivity extends AppCompatActivity {
+public final class IntentChangeActivity extends AppCompatActivity {
 
     private IntentChangeBean mIntentChangeBean;
 

@@ -11,7 +11,7 @@ class IntentChangeBean {
     Intent intent;
     LaunchCallback launchCallback;
 
-    public IntentChangeBean(int requestCode, Intent intent, LaunchCallback launchCallback) {
+    IntentChangeBean(int requestCode, Intent intent, LaunchCallback launchCallback) {
         this.requestCode = requestCode;
         this.intent = intent;
         this.launchCallback = launchCallback;

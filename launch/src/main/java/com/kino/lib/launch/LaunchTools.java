@@ -28,19 +28,19 @@ public class LaunchTools {
     public final static int MAX_REQUEST_CODE = 65535;
     public final static int MIN_REQUEST_CODE = 30000;
 
-    static int generateRandomNumber(Map<Integer, ? extends Object> map) {
-        int number = (mRandom.nextInt(MAX_REQUEST_CODE - MIN_REQUEST_CODE)
+    static int randomRequestCode(Map<Integer, ? extends Object> map) {
+        int requestCode = (mRandom.nextInt(MAX_REQUEST_CODE - MIN_REQUEST_CODE)
                 + MIN_REQUEST_CODE);
-        while (map.containsKey(number)) {
-            number = (mRandom.nextInt(MAX_REQUEST_CODE - MIN_REQUEST_CODE)
+        while (map.containsKey(requestCode)) {
+            requestCode = (mRandom.nextInt(MAX_REQUEST_CODE - MIN_REQUEST_CODE)
                     + MIN_REQUEST_CODE);
         }
-        return number;
+        return requestCode;
     }
 
     public static void launch(Context context, Intent intent) {
         if (context == null || intent == null) {
-            return;
+            throw new IllegalArgumentException("context intent 不能为null");
         }
         if (!(context instanceof Activity)) {
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
